@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "3.6.4",
-    "react-app-polyfill": "^1.0.0"
+    "react-app-polyfill": "1.0.6"
   },
   "alias": {
     "react": "../node_modules/react",
@@ -17,9 +17,9 @@
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
   "devDependencies": {
-    "@types/react": "^16.9.11",
-    "@types/react-dom": "^16.8.4",
-    "parcel": "^1.12.3",
-    "typescript": "^3.4.5"
+    "@types/react": "16.9.26",
+    "@types/react-dom": "16.9.5",
+    "parcel": "1.12.4",
+    "typescript": "3.8.3"
   }
 }
