@@ -1,0 +1,78 @@
+{
+  "name": "use-cheat-code",
+  "version": "0.0.0-semantically-released",
+  "description": "Custom hook for adding cheat codes to your React app",
+  "license": "MIT",
+  "author": {
+    "name": "Justin Hall",
+    "email": "justin.r.hall@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wKovacs64/use-cheat-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wKovacs64/use-cheat-code/issues"
+  },
+  "module": "dist/use-cheat-code.esm.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "cm": "git-cz",
+    "format": "prettier --write \"**/*.{js,ts,tsx,html,json,md,yml,yaml}\"",
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "test:coverage": "tsdx test --coverage",
+    "test:watch": "tsdx test --watch",
+    "lint": "tsdx lint .",
+    "prepare": "tsdx build"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@use-it/event-listener": "0.1.3",
+    "@xstate/react": "0.8.1",
+    "xstate": "4.8.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@sheerun/mutationobserver-shim": "0.3.3",
+    "@testing-library/jest-dom": "5.3.0",
+    "@testing-library/react": "10.0.1",
+    "@testing-library/user-event": "10.0.0",
+    "@types/jest": "25.1.4",
+    "@types/react": "16.9.26",
+    "@types/react-dom": "16.9.5",
+    "@wkovacs64/prettier-config": "2.0.0",
+    "codecov": "3.6.5",
+    "commitizen": "4.0.3",
+    "cz-conventional-changelog": "3.1.0",
+    "eslint-plugin-wkovacs64": "2.4.0",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.9",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "semantic-release": "17.0.4",
+    "tsdx": "0.13.0",
+    "tslib": "1.11.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}

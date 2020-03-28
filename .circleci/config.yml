@@ -1,0 +1,55 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@1.1.6
+
+defaults: &defaults
+  executor:
+    name: node/default
+    tag: lts
+
+jobs:
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - node/install-yarn
+      - node/with-cache:
+          steps:
+            - run:
+                name: Install dependencies
+                command: yarn install --frozen-lockfile
+            - run:
+                name: Lint
+                command: yarn lint
+            - run:
+                name: Test
+                command: yarn test:coverage
+            - run:
+                name: Submit Test Coverage Report
+                command: yarn codecov
+            - run:
+                name: Build
+                command: yarn build
+            - persist_to_workspace:
+                root: ~/
+                paths:
+                  - project
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn semantic-release
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
