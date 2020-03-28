@@ -2,6 +2,13 @@
   "name": "use-cheat-code",
   "version": "0.0.0-semantically-released",
   "description": "Custom hook for adding cheat codes to your React app",
+  "keywords": [
+    "react",
+    "hook",
+    "hooks",
+    "cheat",
+    "code"
+  ],
   "license": "MIT",
   "author": {
     "name": "Justin Hall",
