@@ -18,8 +18,9 @@ function CheatCodeExample() {
       </header>
       <main>
         <p>
-          <span>Invulnerability:</span>{' '}
-          <span>{invulnerability ? 'enabled' : 'disabled'}</span>
+          <span>
+            Invulnerability: {invulnerability ? 'enabled' : 'disabled'}
+          </span>
         </p>
       </main>
     </div>

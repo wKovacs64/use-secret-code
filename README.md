@@ -40,10 +40,7 @@ import { useCheatCode } from 'use-secret-code';
 function CheatCodeExample() {
   const invulnerability = useCheatCode(['i', 'd', 'd', 'q', 'd']);
   return (
-    <p>
-      <span>Invulnerability:</span>{' '}
-      <span>{invulnerability ? 'enabled' : 'disabled'}</span>
-    </p>
+    <span>Invulnerability: {invulnerability ? 'enabled' : 'disabled'}</span>
   );
 }
 ```
