@@ -1,11 +1,12 @@
 {
-  "name": "use-cheat-code",
+  "name": "use-secret-code",
   "version": "0.0.0-semantically-released",
   "description": "Custom hook for adding cheat codes to your React app",
   "keywords": [
     "react",
     "hook",
     "hooks",
+    "secret",
     "cheat",
     "code"
   ],
@@ -16,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wKovacs64/use-cheat-code.git"
+    "url": "https://github.com/wKovacs64/use-secret-code.git"
   },
   "bugs": {
-    "url": "https://github.com/wKovacs64/use-cheat-code/issues"
+    "url": "https://github.com/wKovacs64/use-secret-code/issues"
   },
-  "module": "dist/use-cheat-code.esm.js",
+  "module": "dist/use-secret-code.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
