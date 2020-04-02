@@ -122,3 +122,5 @@ export const useCheatCode = (cheatCodeKeys: Array<string>): boolean => {
   useEventListener<React.KeyboardEvent>('keydown', send);
   return current.matches('enabled');
 };
+
+export const useSecretCode = useCheatCode;

@@ -10,7 +10,7 @@ function CheatCodeExample() {
   return (
     <div style={{ textAlign: 'center', fontSize: 24 }}>
       <header style={{ marginBottom: '4rem' }}>
-        <h1>use-cheat-code playground</h1>
+        <h1>use-secret-code playground</h1>
         <h2 style={{ fontWeight: 'lighter' }}>
           Type &quot;<code style={{ letterSpacing: 2 }}>iddqd</code>&quot; to
           toggle invulnerability!
