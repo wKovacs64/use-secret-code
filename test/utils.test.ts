@@ -2,7 +2,7 @@ import { isEqual, takeRight } from '../src/utils';
 
 describe('utils', () => {
   describe('isEqual', () => {
-    it('correctly identifies array equality', () => {
+    it('correctly identifies flat string array equality', () => {
       const array = ['a', 'b', 'c'];
       const sameContent = ['a', 'b', 'c'];
       const differentOrder = ['a', 'c', 'b'];
