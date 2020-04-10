@@ -7,5 +7,6 @@
     "automerge": false
   },
   "prConcurrentLimit": 0,
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "ignorePaths": ["example"]
 }
