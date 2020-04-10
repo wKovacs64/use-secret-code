@@ -6,35 +6,32 @@ orbs:
 defaults: &defaults
   executor:
     name: node/default
-    tag: lts
+    tag: '12.16.1'
 
 jobs:
   test:
     <<: *defaults
     steps:
       - checkout
-      - node/install-yarn
-      - node/with-cache:
-          steps:
-            - run:
-                name: Install Dependencies
-                command: yarn install --frozen-lockfile
-            - run:
-                name: Lint
-                command: yarn lint
-            - run:
-                name: Test
-                command: yarn test:coverage
-            - run:
-                name: Submit Test Coverage Report
-                command: yarn codecov
-            - run:
-                name: Build
-                command: yarn build
-            - persist_to_workspace:
-                root: ~/
-                paths:
-                  - project
+      - node/install-packages:
+          cache-key: yarn.lock
+          pkg-manager: yarn
+      - run:
+          name: Lint
+          command: yarn lint
+      - run:
+          name: Test
+          command: yarn test:coverage
+      - run:
+          name: Submit Test Coverage Report
+          command: yarn codecov
+      - run:
+          name: Build
+          command: yarn build
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
   release:
     <<: *defaults
     steps:
