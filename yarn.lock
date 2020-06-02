@@ -762,13 +762,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.9.6":
-  version "7.9.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
-  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/template@^7.4.0", "@babel/template@^7.8.3", "@babel/template@^7.8.6":
   version "7.8.6"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.8.6.tgz#86b22af15f828dfb086474f964dcc3e39c43ce2b"
@@ -1419,12 +1412,12 @@
     "@testing-library/dom" "^7.8.0"
     "@types/testing-library__react" "^10.0.1"
 
-"@testing-library/user-event@10.4.0":
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-10.4.0.tgz#015fbfc42bae45201b376e1fe80f86881c4f38ca"
-  integrity sha512-IaWczZ2qO7cLUefEfU7OUBLhpmGVOBEdFe9hEHS3Qu+Wl3JTknD2+XYHLY8oct4O/gA7XP9wXpmCyLVcXRYPqA==
+"@testing-library/user-event@10.4.1":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-10.4.1.tgz#f62adeae45681484dc24e6ca4f0b8f8a09321429"
+  integrity sha512-3sdJAfjT0i4aNvo0Gqod5MvZXutMXarVsLtb+r1t65AaRJY7BgMIzWgOtfM5dxRvZsc7IdXnCt9+gcWhiXk1xg==
   dependencies:
-    "@babel/runtime" "^7.9.6"
+    "@babel/runtime" "^7.10.2"
 
 "@tootallnate/once@1":
   version "1.0.0"
