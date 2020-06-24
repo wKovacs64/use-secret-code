@@ -63,7 +63,7 @@
     "@testing-library/jest-dom": "5.10.1",
     "@testing-library/react": "10.4.1",
     "@testing-library/user-event": "12.0.7",
-    "@types/react": "16.9.38",
+    "@types/react": "16.9.40",
     "@types/react-dom": "16.9.8",
     "@wkovacs64/prettier-config": "3.0.0",
     "codecov": "3.7.0",
