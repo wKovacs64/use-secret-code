@@ -13,7 +13,7 @@ const initialCheatCodeMachineContext: KeyTrackingContext = {
   typedKeys: [],
 };
 
-const createCheatCodeMachine = (cheatCodeKeys: Array<string>) => {
+function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
   return createMachine<KeyTrackingContext, KeyTrackingEvent, KeyTrackingState>(
     {
       id: 'cheatCode',
@@ -115,12 +115,12 @@ const createCheatCodeMachine = (cheatCodeKeys: Array<string>) => {
       },
     },
   );
-};
+}
 
-export const useCheatCode = (cheatCodeKeys: Array<string>): boolean => {
+export function useCheatCode(cheatCodeKeys: Array<string>): boolean {
   const [current, send] = useMachine(createCheatCodeMachine(cheatCodeKeys));
   useEventListener<React.KeyboardEvent>('keydown', send);
   return current.matches('enabled');
-};
+}
 
 export const useSecretCode = useCheatCode;

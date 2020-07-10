@@ -8,9 +8,11 @@ import { useCheatCode } from '../src';
 // required for @testing-library/dom v7 until tsdx upgrades to Jest 25+
 window.MutationObserver = MutationObserver;
 
-const TestComponent: React.FC<{ cheatCodeKeys: Array<string> }> = ({
+function TestComponent({
   cheatCodeKeys,
-}) => {
+}: {
+  cheatCodeKeys: Array<string>;
+}): JSX.Element {
   const cheatCodeActivated = useCheatCode(cheatCodeKeys);
   return (
     <React.Fragment>
@@ -18,7 +20,7 @@ const TestComponent: React.FC<{ cheatCodeKeys: Array<string> }> = ({
       <input data-testid="input" type="text" />
     </React.Fragment>
   );
-};
+}
 
 describe('useCheatCode', () => {
   it('toggles cheat when cheat code is entered', async () => {
