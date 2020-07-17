@@ -24,12 +24,14 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
           initial: 'idle',
           states: {
             idle: {
-              on: {
-                '': {
+              always: [
+                {
                   target: '#cheatCode.enabled',
                   cond: 'cheatCodeEntered',
                   actions: 'reset',
                 },
+              ],
+              on: {
                 keydown: {
                   target: 'recording',
                   actions: 'record',
@@ -37,12 +39,14 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
               },
             },
             recording: {
-              on: {
-                '': {
+              always: [
+                {
                   target: '#cheatCode.enabled',
                   cond: 'cheatCodeEntered',
                   actions: 'reset',
                 },
+              ],
+              on: {
                 keydown: {
                   target: 'recording',
                   actions: 'record',
@@ -61,12 +65,14 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
           initial: 'idle',
           states: {
             idle: {
-              on: {
-                '': {
+              always: [
+                {
                   target: '#cheatCode.disabled',
                   cond: 'cheatCodeEntered',
                   actions: 'reset',
                 },
+              ],
+              on: {
                 keydown: {
                   target: 'recording',
                   actions: 'record',
@@ -74,12 +80,14 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
               },
             },
             recording: {
-              on: {
-                '': {
+              always: [
+                {
                   target: '#cheatCode.disabled',
                   cond: 'cheatCodeEntered',
                   actions: 'reset',
                 },
+              ],
+              on: {
                 keydown: {
                   target: 'recording',
                   actions: 'record',
