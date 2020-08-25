@@ -71,7 +71,7 @@
     "cz-conventional-changelog": "3.2.1",
     "eslint-plugin-wkovacs64": "7.0.0",
     "husky": "4.2.5",
-    "lint-staged": "10.2.11",
+    "lint-staged": "10.2.12",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "semantic-release": "17.1.1",
