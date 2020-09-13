@@ -61,7 +61,7 @@
     "@commitlint/config-conventional": "11.0.0",
     "@sheerun/mutationobserver-shim": "0.3.3",
     "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.0.3",
+    "@testing-library/react": "11.0.4",
     "@testing-library/user-event": "12.1.4",
     "@types/react": "16.9.49",
     "@types/react-dom": "16.9.8",
