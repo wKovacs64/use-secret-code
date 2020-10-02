@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@use-it/event-listener": "0.1.5",
-    "@xstate/react": "0.8.1",
+    "@xstate/react": "1.0.1",
     "xstate": "4.13.0"
   },
   "devDependencies": {
