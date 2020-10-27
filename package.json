@@ -64,7 +64,7 @@
     "@testing-library/react": "11.1.0",
     "@testing-library/user-event": "12.1.10",
     "@types/react": "16.9.53",
-    "@types/react-dom": "16.9.8",
+    "@types/react-dom": "16.9.9",
     "@wkovacs64/prettier-config": "3.0.0",
     "codecov": "3.8.0",
     "commitizen": "4.2.2",
