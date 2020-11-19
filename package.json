@@ -52,7 +52,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@use-it/event-listener": "0.1.5",
+    "@use-it/event-listener": "0.1.6",
     "@xstate/react": "1.0.3",
     "xstate": "4.14.0"
   },
