@@ -69,7 +69,7 @@
     "codecov": "3.8.1",
     "commitizen": "4.2.2",
     "cz-conventional-changelog": "3.3.0",
-    "eslint-plugin-wkovacs64": "11.0.0",
+    "eslint-plugin-wkovacs64": "11.0.1",
     "husky": "4.3.5",
     "lint-staged": "10.5.3",
     "react": "17.0.1",
