@@ -54,7 +54,7 @@
   "dependencies": {
     "@use-it/event-listener": "0.1.6",
     "@xstate/react": "1.2.1",
-    "xstate": "4.15.1"
+    "xstate": "4.15.2"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
