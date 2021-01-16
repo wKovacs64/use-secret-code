@@ -67,7 +67,7 @@
     "@types/react-dom": "17.0.0",
     "@wkovacs64/prettier-config": "3.0.0",
     "codecov": "3.8.1",
-    "commitizen": "4.2.2",
+    "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
     "eslint-plugin-wkovacs64": "11.1.0",
     "husky": "4.3.7",
