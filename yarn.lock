@@ -11119,10 +11119,10 @@ xregexp@^4.3.0:
   dependencies:
     "@babel/runtime-corejs3" "^7.8.3"
 
-xstate@4.16.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.16.0.tgz#e434d0558c0f9a7e9212802834992a6c2f47bca6"
-  integrity sha512-2k/49QYLdzG6Ye1JQWYFuPdU6dnRqHXcuFLxuORiuel04GjApSPct7wp2SOz9RAlNME5EkzclRKw1fHm5yejuA==
+xstate@4.16.1:
+  version "4.16.1"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.16.1.tgz#b75eed10bca380a6db4d7a7ec32dfb9e30f4272f"
+  integrity sha512-YNMcEmYkhtfl+73NQwYg+fj4qUCDF8K2KCtXJNVdwdMQP6o/ASPkaW6gPkQ/E9PbT0Tuiw+RUJsWxIp/v572Bw==
 
 xtend@~4.0.1:
   version "4.0.2"
