@@ -9,6 +9,13 @@
 
   <body>
     <div id="root"></div>
-    <script src="./index.tsx"></script>
+    <script>
+      // hack for Vite
+      if (typeof global === 'undefined') {
+        if (typeof globalThis !== 'undefined') global = globalThis;
+        else global = window;
+      }
+    </script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
