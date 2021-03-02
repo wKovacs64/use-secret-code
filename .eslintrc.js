@@ -6,7 +6,5 @@ module.exports = {
     'plugin:wkovacs64/testing-library',
     'plugin:wkovacs64/typescript',
     'prettier',
-    'prettier/react',
-    'prettier/@typescript-eslint',
   ],
 };
