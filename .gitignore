@@ -192,4 +192,5 @@ $RECYCLE.BIN/
 
 example/yarn.lock
 example/package-lock.json
+example/.parcel-cache
 .now
