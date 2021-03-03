@@ -69,7 +69,7 @@
     "codecov": "3.8.1",
     "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
-    "eslint-plugin-wkovacs64": "11.1.0",
+    "eslint-plugin-wkovacs64": "12.0.0",
     "husky": "5.1.2",
     "lint-staged": "10.5.4",
     "pinst": "2.1.6",
@@ -84,7 +84,7 @@
     "react": ">=16.8.0"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin": "^4.12.0",
-    "@typescript-eslint/parser": "^4.12.0"
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1"
   }
 }
