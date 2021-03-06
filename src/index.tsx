@@ -1,4 +1,4 @@
-import useEventListener from '@use-it/event-listener';
+import * as React from 'react';
 import { createMachine, assign } from 'xstate';
 import { useMachine } from '@xstate/react';
 import { isEqual, takeRight } from './utils';
@@ -126,7 +126,14 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
 
 export function useCheatCode(cheatCodeKeys: Array<string>): boolean {
   const [current, send] = useMachine(createCheatCodeMachine(cheatCodeKeys));
-  useEventListener<'keydown'>('keydown', send);
+
+  React.useEffect(() => {
+    window.addEventListener('keydown', send);
+    return () => {
+      window.removeEventListener('keydown', send);
+    };
+  }, [send]);
+
   return current.matches('enabled');
 }
 

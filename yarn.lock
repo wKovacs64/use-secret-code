@@ -2210,11 +2210,6 @@
     "@typescript-eslint/types" "4.16.1"
     eslint-visitor-keys "^2.0.0"
 
-"@use-it/event-listener@0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@use-it/event-listener/-/event-listener-0.1.6.tgz#5776274fec72f3f25af9ead1898e7f45bc435812"
-  integrity sha512-e6V7vbU8xpuqy4GZkTLExHffOFgxmGHo3kNWnlhzM/zcX2v+idbD/HaJ9sKdQMgTh+L7MIhdRDXGX3SdAViZzA==
-
 "@wkovacs64/prettier-config@3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@wkovacs64/prettier-config/-/prettier-config-3.0.0.tgz#e56992085ea1896a88adf36f8a279ffd6b0fc467"
