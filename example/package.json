@@ -13,6 +13,10 @@
     "react-dom": "../node_modules/react-dom/profiling",
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
+  "resolutions": {
+    "//": "work around babel regression, https://github.com/vitejs/vite/pull/2198",
+    "@babel/standalone": "7.13.6"
+  },
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
