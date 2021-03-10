@@ -8,10 +8,6 @@
     "dev": "vite",
     "serve": "vite preview"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "react-app-polyfill": "^2.0.0"
-  },
   "alias": {
     "react": "../node_modules/react",
     "react-dom": "../node_modules/react-dom/profiling",

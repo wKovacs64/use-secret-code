@@ -1,5 +1,3 @@
-import 'react-app-polyfill/ie11';
-import 'core-js/features/set';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useCheatCode } from '..';
