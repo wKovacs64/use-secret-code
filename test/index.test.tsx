@@ -1,7 +1,7 @@
 import * as React from 'react';
 import MutationObserver from '@sheerun/mutationobserver-shim';
 import '@testing-library/jest-dom';
-import { render, screen, act } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import user from '@testing-library/user-event';
 import { useCheatCode } from '../src';
 
@@ -31,17 +31,9 @@ describe('useCheatCode', () => {
     const input = screen.getByTestId('input');
 
     expect(activated).toHaveTextContent('false');
-
-    await act(async () => {
-      await user.type(input, cheatCode);
-    });
-
+    user.type(input, cheatCode);
     expect(activated).toHaveTextContent('true');
-
-    await act(async () => {
-      await user.type(input, cheatCode);
-    });
-
+    user.type(input, cheatCode);
     expect(activated).toHaveTextContent('false');
   });
 });
