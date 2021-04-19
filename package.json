@@ -59,7 +59,7 @@
     "@sheerun/mutationobserver-shim": "0.3.3",
     "@testing-library/jest-dom": "5.11.10",
     "@testing-library/react": "11.2.6",
-    "@testing-library/user-event": "13.1.4",
+    "@testing-library/user-event": "13.1.5",
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.3",
     "@wkovacs64/prettier-config": "3.0.0",
