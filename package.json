@@ -54,8 +54,8 @@
     "xstate": "4.19.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.3",
-    "@commitlint/config-conventional": "12.1.3",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
     "@sheerun/mutationobserver-shim": "0.3.3",
     "@testing-library/jest-dom": "5.12.0",
     "@testing-library/react": "11.2.6",
