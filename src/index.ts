@@ -1,23 +1,35 @@
 import * as React from 'react';
-import { createMachine, assign } from 'xstate';
+import { createModel } from 'xstate/lib/model';
 import { useMachine } from '@xstate/react';
 import { isEqual, takeRight } from './utils';
-import {
-  KeyTrackingContext,
-  KeyTrackingEvent,
-  KeyTrackingState,
-} from '../types';
 
-const initialCheatCodeMachineContext: KeyTrackingContext = {
+const initialContext: CheatCodeContext = {
   typedKeys: [],
 };
 
+const creators = {
+  events: {
+    keydown: (event: KeyboardEvent) => ({ key: event.key }),
+  },
+};
+
+const cheatCodeModel = createModel(initialContext, creators);
+
+const reset = cheatCodeModel.assign(initialContext);
+
+const record = cheatCodeModel.assign(
+  {
+    typedKeys: (context, event) => [...context.typedKeys, event.key],
+  },
+  'keydown',
+);
+
 function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
-  return createMachine<KeyTrackingContext, KeyTrackingEvent, KeyTrackingState>(
+  return cheatCodeModel.createMachine(
     {
       id: 'cheatCode',
       initial: 'disabled',
-      context: initialCheatCodeMachineContext,
+      context: initialContext,
       states: {
         disabled: {
           initial: 'idle',
@@ -25,36 +37,36 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
             idle: {
               always: [
                 {
-                  target: '#cheatCode.enabled',
                   cond: 'cheatCodeEntered',
-                  actions: 'reset',
+                  actions: [reset],
+                  target: '#cheatCode.enabled',
                 },
               ],
               on: {
                 keydown: {
+                  actions: [record],
                   target: 'recording',
-                  actions: 'record',
                 },
               },
             },
             recording: {
               always: [
                 {
-                  target: '#cheatCode.enabled',
                   cond: 'cheatCodeEntered',
-                  actions: 'reset',
+                  actions: [reset],
+                  target: '#cheatCode.enabled',
                 },
               ],
               on: {
                 keydown: {
+                  actions: [record],
                   target: 'recording',
-                  actions: 'record',
                 },
               },
               after: {
-                DONE_TYPING: {
+                doneTyping: {
+                  actions: [reset],
                   target: 'idle',
-                  actions: 'reset',
                 },
               },
             },
@@ -66,36 +78,36 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
             idle: {
               always: [
                 {
-                  target: '#cheatCode.disabled',
                   cond: 'cheatCodeEntered',
-                  actions: 'reset',
+                  actions: [reset],
+                  target: '#cheatCode.disabled',
                 },
               ],
               on: {
                 keydown: {
+                  actions: [record],
                   target: 'recording',
-                  actions: 'record',
                 },
               },
             },
             recording: {
               always: [
                 {
-                  target: '#cheatCode.disabled',
                   cond: 'cheatCodeEntered',
-                  actions: 'reset',
+                  actions: [reset],
+                  target: '#cheatCode.disabled',
                 },
               ],
               on: {
                 keydown: {
+                  actions: [record],
                   target: 'recording',
-                  actions: 'record',
                 },
               },
               after: {
-                DONE_TYPING: {
+                doneTyping: {
+                  actions: [reset],
                   target: 'idle',
-                  actions: 'reset',
                 },
               },
             },
@@ -105,13 +117,7 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
     },
     {
       delays: {
-        DONE_TYPING: 2000,
-      },
-      actions: {
-        reset: assign(initialCheatCodeMachineContext),
-        record: assign({
-          typedKeys: (context, event) => [...context.typedKeys, event.key],
-        }),
+        doneTyping: 2000,
       },
       guards: {
         cheatCodeEntered: (context) =>
@@ -125,16 +131,25 @@ function createCheatCodeMachine(cheatCodeKeys: Array<string>) {
 }
 
 export function useCheatCode(cheatCodeKeys: Array<string>): boolean {
-  const [current, send] = useMachine(createCheatCodeMachine(cheatCodeKeys));
+  const [state, send] = useMachine(createCheatCodeMachine(cheatCodeKeys));
 
   React.useEffect(() => {
-    window.addEventListener('keydown', send);
+    const handleKeyboardEvent = (event: KeyboardEvent) => {
+      send(cheatCodeModel.events.keydown(event));
+    };
+
+    window.addEventListener('keydown', handleKeyboardEvent);
+
     return () => {
-      window.removeEventListener('keydown', send);
+      window.removeEventListener('keydown', handleKeyboardEvent);
     };
   }, [send]);
 
-  return current.matches('enabled');
+  return state.matches('enabled');
 }
 
 export const useSecretCode = useCheatCode;
+
+interface CheatCodeContext {
+  typedKeys: Array<string>;
+}
