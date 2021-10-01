@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 import legacy from '@vitejs/plugin-legacy';
 
 // https://vitejs.dev/config/
@@ -8,5 +8,5 @@ export default defineConfig({
     // required when targeting legacy browsers
     minify: 'terser',
   },
-  plugins: [reactRefresh(), legacy({ targets: ['defaults'] })],
+  plugins: [react(), legacy({ targets: ['defaults'] })],
 });
