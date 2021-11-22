@@ -50,7 +50,7 @@
     }
   },
   "dependencies": {
-    "@xstate/react": "1.6.2",
+    "@xstate/react": "1.6.3",
     "xstate": "4.26.0"
   },
   "devDependencies": {
