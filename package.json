@@ -57,7 +57,7 @@
     "@commitlint/cli": "15.0.0",
     "@commitlint/config-conventional": "15.0.0",
     "@sheerun/mutationobserver-shim": "0.3.3",
-    "@testing-library/jest-dom": "5.15.0",
+    "@testing-library/jest-dom": "5.15.1",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "13.5.0",
     "@types/react": "17.0.36",
