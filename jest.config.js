@@ -1,4 +1,6 @@
 module.exports = {
-  // needed until tsdx updates jest to >= v26
-  testEnvironment: 'jest-environment-jsdom-sixteen',
+  coverageDirectory: 'coverage',
+  coveragePathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/test'],
+  coverageReporters: ['html', 'json', 'lcov', 'text'],
+  testEnvironment: 'jsdom',
 };
