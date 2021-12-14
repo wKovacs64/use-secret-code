@@ -8383,10 +8383,10 @@ tslib@~2.1.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
-tsup@5.11.1:
-  version "5.11.1"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.11.1.tgz#a0f457e4e1e7ac68c7914e01ce4dbab647ba4828"
-  integrity sha512-4J1kknLCT7dlVoyoGwSl62cUo7QIar89pdOFhK5V5T81M9G2MR1WFbPlFnc6kHC10qgLBeoJdjnrnscJn9yc/w==
+tsup@5.11.4:
+  version "5.11.4"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.11.4.tgz#c149446d9163ed7bb6f0713ce75e8d102971efc5"
+  integrity sha512-xDpGHCRHn2McoxneCS6ljz2Ab+8vhpF0jpc/LEpA6tzWC347Z3T+zen4de8VanjYpeKUvTrLxrXdzdvd0DAdGQ==
   dependencies:
     bundle-require "^2.1.8"
     cac "^6.7.12"
