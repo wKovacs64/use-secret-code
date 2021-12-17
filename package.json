@@ -73,7 +73,7 @@
     "codecov": "3.8.3",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.4.1",
+    "eslint": "8.5.0",
     "eslint-plugin-wkovacs64": "13.8.0",
     "husky": "7.0.4",
     "jest": "27.4.5",
