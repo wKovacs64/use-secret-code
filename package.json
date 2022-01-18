@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@xstate/react": "1.6.3",
-    "xstate": "4.27.0"
+    "xstate": "4.28.0"
   },
   "devDependencies": {
     "@babel/core": "7.16.7",
