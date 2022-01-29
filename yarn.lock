@@ -3116,10 +3116,12 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
-bundle-require@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/bundle-require/-/bundle-require-2.1.8.tgz#28f6de9d4468a6b7b76fb5c9bf52e70f5091245d"
-  integrity sha512-oOEg3A0hy/YzvNWNowtKD0pmhZKseOFweCbgyMqTIih4gRY1nJWsvrOCT27L9NbIyL5jMjTFrAUpGxxpW68Puw==
+bundle-require@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/bundle-require/-/bundle-require-3.0.2.tgz#900fbd84d84db6799e674fbebc74c4ba498651b5"
+  integrity sha512-WLS50LRdi8oAMnQfoxqjI3Fszi0xaI6dJumvtX909u0WREkYCuFGeE2UwMn5H8bSUXWtUB0XeBqNkgpVjMcYyQ==
+  dependencies:
+    load-tsconfig "^0.2.0"
 
 cac@^6.7.12:
   version "6.7.12"
@@ -6230,6 +6232,11 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
+load-tsconfig@^0.2.0:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/load-tsconfig/-/load-tsconfig-0.2.2.tgz#1aaf97e37e34a847042598a7596f4a3163320e06"
+  integrity sha512-9B4XOMjNhphRmXg3YHFnpgEH5fmYKofXJ7M6sLkRcfJ5DcuPiStlQ1Or+1Rv/aML716kQ9Q+C9zJGUcfMYiq4Q==
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -8616,12 +8623,12 @@ tslib@^2, tslib@^2.1.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tsup@5.11.11:
-  version "5.11.11"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.11.11.tgz#b1309ac152a005035924a05a2ca77681ee1b271f"
-  integrity sha512-rgbTu+KhAI9PdGUS07rKohDXbRLTstBGJaxl75q7RZYRGF+n+kN8L4RlXY5pqYb9Hsq0gEB6nS39v7nSvVBS+g==
+tsup@5.11.12:
+  version "5.11.12"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.11.12.tgz#306838b0a3053c11cd8acf6dfeb23608b785cae7"
+  integrity sha512-zwOcdMaWKgbcJeWQ654OYdCfcy+dj9d3nzutPPmqiDPeHkmxjovIFX6xqvPTcIkMEuTsUgHuQDoJ0qS3r16zqA==
   dependencies:
-    bundle-require "^2.1.8"
+    bundle-require "^3.0.2"
     cac "^6.7.12"
     chokidar "^3.5.1"
     debug "^4.3.1"
