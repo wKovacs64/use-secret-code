@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useCheatCode } from '../src';
 
@@ -17,9 +17,13 @@ describe('useCheatCode', () => {
     render(<TestComponent cheatCodeKeys={cheatCodeKeys} />);
 
     expect(screen.getByTestId('disabled')).toBeInTheDocument();
-    await user.keyboard(cheatCode);
+    await act(async () => {
+      await user.keyboard(cheatCode);
+    });
     expect(screen.getByTestId('enabled')).toBeInTheDocument();
-    await user.keyboard(cheatCode);
+    await act(async () => {
+      await user.keyboard(cheatCode);
+    });
     expect(screen.getByTestId('disabled')).toBeInTheDocument();
   });
 });
