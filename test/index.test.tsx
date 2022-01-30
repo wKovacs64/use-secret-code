@@ -11,14 +11,15 @@ function TestComponent({ cheatCodeKeys }: { cheatCodeKeys: Array<string> }) {
 
 describe('useCheatCode', () => {
   it('toggles cheat when cheat code is entered', async () => {
+    const user = userEvent.setup();
     const cheatCode = 'iddqd';
     const cheatCodeKeys = cheatCode.split('');
     render(<TestComponent cheatCodeKeys={cheatCodeKeys} />);
 
     expect(screen.getByTestId('disabled')).toBeInTheDocument();
-    userEvent.keyboard(cheatCode);
+    await user.keyboard(cheatCode);
     expect(screen.getByTestId('enabled')).toBeInTheDocument();
-    userEvent.keyboard(cheatCode);
+    await user.keyboard(cheatCode);
     expect(screen.getByTestId('disabled')).toBeInTheDocument();
   });
 });
