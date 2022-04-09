@@ -13,20 +13,19 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
+      - node/install-packages
       - run:
           name: Lint
-          command: yarn lint
+          command: npm run lint
       - run:
           name: Test
-          command: yarn test:coverage
+          command: npm run test:coverage
       - run:
           name: Submit Test Coverage Report
-          command: yarn codecov
+          command: npx codecov
       - run:
           name: Build
-          command: yarn build
+          command: npm run build
       - persist_to_workspace:
           root: ~/
           paths:
@@ -36,7 +35,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: yarn semantic-release
+      - run: npx semantic-release
 
 workflows:
   version: 2
