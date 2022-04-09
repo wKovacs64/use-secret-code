@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-// eslint-disable-next-line import/no-relative-packages
+/* eslint-disable import/no-relative-packages */
+// @ts-ignore
 import { useCheatCode } from '..';
 
 function CheatCodeExample() {
