@@ -7,4 +7,8 @@ module.exports = {
     'plugin:wkovacs64/typescript',
     'prettier',
   ],
+  rules: {
+    // doesn't work with vitest as it relies on jest version detection
+    'jest/no-deprecated-functions': 'off',
+  },
 };

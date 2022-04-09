@@ -5,6 +5,8 @@
     "strict": true,
     "moduleResolution": "node",
     "importsNotUsedAsValues": "error",
-    "jsx": "react"
+    "jsx": "react",
+    "skipLibCheck": true,
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   }
 }
