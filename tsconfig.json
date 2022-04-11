@@ -6,7 +6,8 @@
     "moduleResolution": "node",
     "importsNotUsedAsValues": "error",
     "jsx": "react",
-    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   }
 }
