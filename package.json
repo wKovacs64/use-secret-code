@@ -43,7 +43,8 @@
     "test:watch": "vitest watch",
     "lint": "eslint --ext \".js,.jsx,.ts,.tsx\" .",
     "husky:install": "husky install",
-    "prepare": "npm-run-all --silent husky:install build"
+    "prepare": "npm-run-all --silent husky:install build",
+    "postinstall": "patch-package"
   },
   "private": false,
   "publishConfig": {
@@ -78,6 +79,7 @@
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
     "npm-run-all": "4.1.5",
+    "patch-package": "6.4.7",
     "prettier": "2.6.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
