@@ -65,7 +65,7 @@
     "@testing-library/dom": "8.13.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.4",
-    "@testing-library/user-event": "14.0.4",
+    "@testing-library/user-event": "14.1.0",
     "@types/node": "17.0.12",
     "@types/react": "17.0.44",
     "@types/react-dom": "17.0.15",
