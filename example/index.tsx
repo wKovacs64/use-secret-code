@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-/* eslint-disable import/no-relative-packages */
-// @ts-ignore
-import { useCheatCode } from '..';
+import { useCheatCode } from 'use-secret-code';
 
 function CheatCodeExample() {
   const invulnerability = useCheatCode(['i', 'd', 'd', 'q', 'd']);

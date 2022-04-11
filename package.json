@@ -36,6 +36,8 @@
     "cm": "git-cz",
     "format": "prettier --write .",
     "build": "tsup ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
+    "example:install": "npm --workspace=example install",
+    "example:build": "npm --workspace=example run build",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch",
@@ -86,5 +88,8 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
-  }
+  },
+  "workspaces": [
+    "example"
+  ]
 }
