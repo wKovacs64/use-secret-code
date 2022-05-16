@@ -70,7 +70,7 @@
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
     "@wkovacs64/prettier-config": "3.0.2",
-    "c8": "7.11.2",
+    "c8": "7.11.3",
     "codecov": "3.8.3",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
