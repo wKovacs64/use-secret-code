@@ -41,7 +41,7 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch",
-    "lint": "eslint --ext \".js,.jsx,.ts,.tsx\" .",
+    "lint": "eslint .",
     "husky:install": "husky install",
     "prepare": "npm-run-all --silent husky:install build",
     "postinstall": "patch-package"
