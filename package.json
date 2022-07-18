@@ -33,18 +33,17 @@
     "dist"
   ],
   "scripts": {
-    "cm": "git-cz",
-    "format": "prettier --cache --write .",
     "build": "tsup ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
     "example:install": "npm --workspace=example install",
     "example:build": "npm --workspace=example run build",
-    "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest watch",
+    "format": "prettier --cache --write .",
     "lint": "eslint .",
     "husky:install": "husky install",
-    "prepare": "npm-run-all --silent husky:install build",
-    "postinstall": "patch-package"
+    "prepare": "run-s --silent husky:install build",
+    "postinstall": "patch-package",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest watch"
   },
   "private": false,
   "publishConfig": {
