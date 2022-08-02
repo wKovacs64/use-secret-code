@@ -3,9 +3,9 @@
 _Custom hook for adding cheat codes to your React app._
 
 [![npm Version][npm-image]][npm-url]
+[![Build Status][ci-image]][ci-url]
 [![Code Coverage][coverage-image]][coverage-url]
 [![semantic-release][semantic-release-image]][semantic-release-url]
-[![Build Status][ci-image]][ci-url]
 
 ## Installation
 
@@ -60,8 +60,8 @@ This module is distributed under the [MIT License][license].
   https://img.shields.io/npm/v/use-secret-code.svg?style=for-the-badge
 [npm-url]: https://www.npmjs.com/package/use-secret-code
 [ci-image]:
-  https://github.com/wKovacs64/use-secret-code/actions/workflows/ci.yml/badge.svg?event=push
-[ci-url]: https://github.com/wKovacs64/use-secret-code/actions/workflows/ci.yml
+  https://img.shields.io/github/workflow/status/wKovacs64/use-secret-code/%F0%9F%A4%96%20CI/main?logo=github&style=for-the-badge
+[ci-url]: https://github.com/wKovacs64/use-secret-code/actions?query=workflow%3Aci
 [coverage-image]:
   https://img.shields.io/codecov/c/github/wKovacs64/use-secret-code/main.svg?style=for-the-badge
 [coverage-url]: https://codecov.io/gh/wKovacs64/use-secret-code/branch/main
