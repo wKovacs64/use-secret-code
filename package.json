@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "@xstate/react": "3.0.1",
-    "xstate": "4.33.4"
+    "xstate": "4.33.5"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
