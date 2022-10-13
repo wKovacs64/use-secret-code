@@ -1,6 +1,6 @@
 {
   "name": "use-secret-code",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.79",
   "description": "Custom hook for adding cheat codes to your React app",
   "keywords": [
     "react",
@@ -34,6 +34,9 @@
   ],
   "scripts": {
     "build": "tsup ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
     "example:install": "npm --workspace=example install",
     "example:build": "npm --workspace=example run build",
     "format": "prettier --cache --write .",
@@ -46,21 +49,13 @@
     "test:watch": "vitest watch"
   },
   "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "@xstate/react": "3.0.1",
     "xstate": "4.33.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
+    "@changesets/changelog-github": "0.4.7",
+    "@changesets/cli": "2.25.0",
     "@testing-library/dom": "8.19.0",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -72,8 +67,6 @@
     "@wkovacs64/prettier-config": "3.0.2",
     "c8": "7.12.0",
     "codecov": "3.8.3",
-    "commitizen": "4.2.5",
-    "cz-conventional-changelog": "3.3.0",
     "eslint": "8.25.0",
     "eslint-plugin-wkovacs64": "13.16.0",
     "husky": "8.0.1",
@@ -83,7 +76,6 @@
     "prettier": "2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "semantic-release": "19.0.5",
     "tsup": "6.2.3",
     "typescript": "4.8.4",
     "vitest": "0.24.1"

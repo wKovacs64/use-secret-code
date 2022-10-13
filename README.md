@@ -2,10 +2,8 @@
 
 _Custom hook for adding cheat codes to your React app._
 
-[![npm Version][npm-image]][npm-url]
-[![Build Status][ci-image]][ci-url]
+[![npm Version][npm-image]][npm-url] [![Build Status][ci-image]][ci-url]
 [![Code Coverage][coverage-image]][coverage-url]
-[![semantic-release][semantic-release-image]][semantic-release-url]
 
 ## Installation
 
@@ -61,13 +59,11 @@ This module is distributed under the [MIT License][license].
 [npm-url]: https://www.npmjs.com/package/use-secret-code
 [ci-image]:
   https://img.shields.io/github/workflow/status/wKovacs64/use-secret-code/%F0%9F%A4%96%20CI/main?logo=github&style=for-the-badge
-[ci-url]: https://github.com/wKovacs64/use-secret-code/actions?query=workflow%3Aci
+[ci-url]:
+  https://github.com/wKovacs64/use-secret-code/actions?query=workflow%3Aci
 [coverage-image]:
   https://img.shields.io/codecov/c/github/wKovacs64/use-secret-code/main.svg?style=for-the-badge
 [coverage-url]: https://codecov.io/gh/wKovacs64/use-secret-code/branch/main
-[semantic-release-image]:
-  https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge
-[semantic-release-url]: https://github.com/semantic-release/semantic-release
 [license]: https://github.com/wKovacs64/use-secret-code/tree/main/LICENSE
 [react]: https://reactjs.org/
 [hooks-intro]: https://reactjs.org/docs/hooks-intro.html
