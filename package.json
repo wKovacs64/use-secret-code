@@ -49,6 +49,9 @@
     "test:watch": "vitest watch"
   },
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@xstate/react": "3.0.1",
     "xstate": "4.33.6"
