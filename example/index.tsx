@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { useCheatCode } from 'use-secret-code';
 
 function CheatCodeExample() {
@@ -25,4 +25,6 @@ function CheatCodeExample() {
   );
 }
 
-ReactDOM.render(<CheatCodeExample />, document.getElementById('root'));
+const root = createRoot(document.getElementById('root') as HTMLElement);
+
+root.render(<CheatCodeExample />);
