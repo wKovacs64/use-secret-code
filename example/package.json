@@ -25,6 +25,6 @@
     "vite": "^2.9.1"
   },
   "dependencies": {
-    "use-secret-code": "file:.."
+    "use-secret-code": "1.0.79"
   }
 }
