@@ -35,7 +35,7 @@
   "scripts": {
     "build": "tsup ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
     "changeset": "changeset",
-    "changeset:version": "changeset version",
+    "changeset:version": "changeset version && npm install --package-lock-only",
     "changeset:publish": "changeset publish",
     "example:install": "npm --workspace=example install",
     "example:build": "npm --workspace=example run build",
