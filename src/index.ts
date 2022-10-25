@@ -17,12 +17,13 @@ const initialContext: CheatCodeContext = {
 
 type KeydownEvent = KeyboardEvent & { type: 'keydown' };
 
-/** @xstate-layout N4IgpgJg5mDOIC5QGMAWYCGAXAwgewjAFkM0BLAOzADoIzYMAjAG0mrIlYGIBrMATwh4A7hUSgADnlhksZPGKQgAHogBMANgAc1DQFYADBoDMAdjVrjATj16ANCH6Jj16moCMhjaZNWNGgBZNAF9ghzRMXAJiUlRKGjoGFjYObnEQKRk5BXTVBCtdAz1NYw0rAINyrS1TBycEYoLLPXdTLQ1NAL0fUPD0bHxCEnIqWnomVghqACcwZDxpugooXgEhUXTM2XlFUDyArTVqUo1WqwN3dytTczrEK+NqT0srQ-19YrVekAiB6OG4qNEhM2LN5otKCtNtJtjklHl3AY2tQ9DYyvotAEAoE7ghjO4NNQanouqi1EZ8e5vr8okNYvExklJjM5gslitlLAsNgaBgAGZYMDTAAUQioABV+BJIQBKLg0wYxEYJcbJKZgtmQ6FZHa5dRmahFbRdDpqUxFLq4tQHQ1WMxFEkBVruLTGan9WlKwE0MAUEFTVJgVaCES7DIw7JhhHuJ1uV2eNoWGymYy4-zuahWTzuYwBcxXAy592RRUAhm+-3sThB7WwqOIc6PV1tLS2HPPeyORCmc7HfROu3ucmorTFv505XUCtqlng9nB9ZhraRvUIdsZgwVV6vPSBboBXEkgo1S7k7z+YxqKxjz1l0bT5kaiHLLi1lfw+7WjOkpF6dp6SlO3qdoM3-J1L3NU0AhvUt6XvP0ZyfedOW5QVqH5QURTFMBJWlZY5QVf44J9BDH1ZZ8oDfXUPzXRECm0coDC0GMNCYoDEF3HQTwTCotCsNRR2+ChongJRCInb1GUrQMqLhPZEG0agTR7Uwrm0AlTHYvFEWOTSulbAlvEsGCiMnYFEPI9lZPrBAugKFMXBqMpijaIpcXxAxdJJP8Wn8cw3TCH4PVgszVUmazVyxJTdxUtTmO8LSh0854KmdREWnxEyJPLUiUmrCKaL8I4GICaxri0Cl3DTUoiVUnNrFRU0qUC8SvRyyskK1JRl2o+S1wEnReM8dMAIqg8uwQfQjm40rujtbwAr6EtTMkh9IAKvq7R0EqytckwqomvNCW4r8LAMK8sraqgNpURAAFoY2OcoUxMIpzhaHNcTzJ5igqFpdyxFNBNCIA */
+/** @xstate-layout N4IgpgJg5mDOIC5QGMAWYCGAXAwgewjAFkM0BLAOzADoIzYMAjAG0mrIlYGIBrMATwh4A7hQDaABgC6iUAAc8sMljJ4KskAA9EAJgCsAdmoBGCQBYAHHoDMANjOnbei7YA0IfojMTb1B7YsATgtjAxsgs1sAXyj3NExcAmJSVEoaOgYWNg5uSRkkEAUlFTUNbQQdY189Y1qJPUiDQJtjM3dPBEDjaltrGusB2oMdHVsDGLj0bHxCEnIqWnomVghqACcwZDw1ugooXgEhUTyNIuVVdQLyhrMTYcCuiwljYIlrdsRrAwk-Z76LaxvL71aKxEDxaZJOapBYZZZsDZbHaUfYnApnEqXUDlQJOHoWEIPF6AqoGD4VELUerPCw6CJhWw6CbgqaJWYpNKLTIrdabba7faaWBYbA0DAAMywYDWAAohFQACr8OQogCUXAhbOS83SSyyq0R-JRaPkinOpSuuh0gWowLMzVadJqzXJdKMxn0ZjsXsMwTMzM1M21MJoYAo8NWOTAB0EInE0lOZsxZUQpgMt3T5kBb09ZjJHkQBmstx0kUs+gkpYsTQDrKD0M5YYj7E40ZNhSTFxTFSq1BqdQaY2a1la5Nsxgs1AMdTGYVa3nGYMDUI5Cyb+t5SIFMaO8fypuKXctCGM1geff0gWsFm8enquLHzT7ekZOgM1cqgP9S7rK511HXHlDWRPYuHbDEj2xVN9GsZ9zEHV9rz0clvBtfwCUrG9RmaPRawSetV1DcMN2A7chRFKVqAlKVZXlMAlRVPZ1WXdl-0AhE+RAqBwM7C0oJPCRAh0KdRiCO871pMw2gLBBxz0Kc6mLWwHgBJlmQoJJ4AKFjg05OENyjRNDz4rREACPwXyaadcRCMZkJkkcfi+BpnBqWwxh0aw8MhViQy5ZtSJRIzzSxUyEDMZxbQePMCVqD0hPJRzbTCCKrCqDyvJ-fC-z8-SVmC5Njx0H4IqHayAlJeyOheScPQaUI7BsFo1MmbLfMbYieUM9FeNCnFGXxQIvQed8fBHMc7GoatagGZpcRGYxvK1Bs106jityCnrjL66ChN+YJVLGWl8w6XpfGm08zz0eaRiWgi2LWiACsgsKuluAIhrPQJRt6YxyT0UYFNMYwX2ta8xjunK0mekzygAWjfPsvWKuk3gnax9FdHo+hBic5okLDQhiGIgA */
 const cheatCodeMachine = createMachine(
   {
     context: initialContext,
     tsTypes: {} as import('./index.typegen').Typegen0,
     schema: { context: {} as CheatCodeContext, events: {} as KeydownEvent },
+    predictableActionArguments: true,
     id: 'cheatCodeMachine',
     initial: 'disabled',
     states: {
@@ -31,33 +32,34 @@ const cheatCodeMachine = createMachine(
         states: {
           idle: {
             always: {
-              actions: 'resetTypedKeys',
-              cond: 'cheatCodeEntered',
               target: '#cheatCodeMachine.enabled',
+              cond: 'cheatCodeEntered',
+              actions: 'resetTypedKeys',
             },
             on: {
               keydown: {
-                actions: 'record',
                 target: 'recording',
+                actions: 'record',
               },
             },
           },
           recording: {
             after: {
               doneTyping: {
-                actions: 'resetTypedKeys',
-                target: 'idle',
+                target: '#cheatCodeMachine.disabled.idle',
+                actions: ['resetTypedKeys'],
+                internal: false,
               },
             },
             always: {
-              actions: 'resetTypedKeys',
-              cond: 'cheatCodeEntered',
               target: '#cheatCodeMachine.enabled',
+              cond: 'cheatCodeEntered',
+              actions: 'resetTypedKeys',
             },
             on: {
               keydown: {
-                actions: 'record',
                 target: 'recording',
+                actions: 'record',
                 internal: false,
               },
             },
@@ -69,33 +71,34 @@ const cheatCodeMachine = createMachine(
         states: {
           idle: {
             always: {
-              actions: 'resetTypedKeys',
-              cond: 'cheatCodeEntered',
               target: '#cheatCodeMachine.disabled',
+              cond: 'cheatCodeEntered',
+              actions: 'resetTypedKeys',
             },
             on: {
               keydown: {
-                actions: 'record',
                 target: 'recording',
+                actions: 'record',
               },
             },
           },
           recording: {
             after: {
               doneTyping: {
-                actions: 'resetTypedKeys',
-                target: 'idle',
+                target: '#cheatCodeMachine.enabled.idle',
+                actions: ['resetTypedKeys'],
+                internal: false,
               },
             },
             always: {
-              actions: 'resetTypedKeys',
-              cond: 'cheatCodeEntered',
               target: '#cheatCodeMachine.disabled',
+              cond: 'cheatCodeEntered',
+              actions: 'resetTypedKeys',
             },
             on: {
               keydown: {
-                actions: 'record',
                 target: 'recording',
+                actions: 'record',
                 internal: false,
               },
             },

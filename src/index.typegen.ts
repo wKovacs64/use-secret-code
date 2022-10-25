@@ -2,13 +2,6 @@
 
 export interface Typegen0 {
   '@@xstate/typegen': true;
-  eventsCausingActions: {
-    record: 'keydown';
-    resetTypedKeys:
-      | ''
-      | 'xstate.after(doneTyping)#cheatCodeMachine.disabled.recording'
-      | 'xstate.after(doneTyping)#cheatCodeMachine.enabled.recording';
-  };
   internalEvents: {
     '': { type: '' };
     'xstate.after(doneTyping)#cheatCodeMachine.disabled.recording': {
@@ -26,12 +19,19 @@ export interface Typegen0 {
     guards: never;
     delays: never;
   };
+  eventsCausingActions: {
+    record: 'keydown';
+    resetTypedKeys:
+      | ''
+      | 'xstate.after(doneTyping)#cheatCodeMachine.disabled.recording'
+      | 'xstate.after(doneTyping)#cheatCodeMachine.enabled.recording';
+  };
   eventsCausingServices: {};
   eventsCausingGuards: {
     cheatCodeEntered: '';
   };
   eventsCausingDelays: {
-    doneTyping: 'xstate.init';
+    doneTyping: 'keydown';
   };
   matchesStates:
     | 'disabled'
