@@ -70,7 +70,7 @@
     "@wkovacs64/prettier-config": "3.0.2",
     "c8": "7.12.0",
     "codecov": "3.8.3",
-    "eslint": "8.27.0",
+    "eslint": "8.28.0",
     "eslint-plugin-wkovacs64": "13.17.0",
     "husky": "8.0.2",
     "lint-staged": "13.0.3",
