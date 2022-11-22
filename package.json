@@ -1,6 +1,6 @@
 {
   "name": "use-secret-code",
-  "version": "1.0.79",
+  "version": "1.0.80",
   "description": "Custom hook for adding cheat codes to your React app",
   "keywords": [
     "react",
