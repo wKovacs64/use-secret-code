@@ -56,7 +56,7 @@
     "xstate": "4.35.0"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "0.4.7",
+    "@changesets/changelog-github": "0.4.8",
     "@changesets/cli": "2.25.2",
     "@testing-library/dom": "8.19.0",
     "@testing-library/jest-dom": "5.16.5",
