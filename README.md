@@ -58,7 +58,7 @@ This module is distributed under the [MIT License][license].
   https://img.shields.io/npm/v/use-secret-code.svg?style=for-the-badge
 [npm-url]: https://www.npmjs.com/package/use-secret-code
 [ci-image]:
-  https://img.shields.io/github/workflow/status/wKovacs64/use-secret-code/%F0%9F%A4%96%20CI/main?logo=github&style=for-the-badge
+  https://img.shields.io/github/actions/workflow/status/wKovacs64/use-secret-code/ci.yml?logo=github&style=for-the-badge
 [ci-url]:
   https://github.com/wKovacs64/use-secret-code/actions?query=workflow%3Aci
 [coverage-image]:
