@@ -52,7 +52,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@xstate/react": "3.1.2",
+    "@xstate/react": "3.2.1",
     "xstate": "4.36.0"
   },
   "devDependencies": {
