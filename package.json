@@ -63,7 +63,7 @@
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
     "@types/node": "18.15.11",
-    "@types/react": "18.0.34",
+    "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
     "@vitest/coverage-c8": "0.30.1",
     "@wkovacs64/prettier-config": "3.0.3",
