@@ -4,7 +4,7 @@
     "lib": ["dom", "esnext"],
     "strict": true,
     "moduleResolution": "node",
-    "importsNotUsedAsValues": "error",
+    "verbatimModuleSyntax": true,
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": false,
