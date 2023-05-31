@@ -65,7 +65,7 @@
     "@types/node": "18.16.16",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
-    "@vitest/coverage-c8": "0.31.2",
+    "@vitest/coverage-c8": "0.31.3",
     "@wkovacs64/prettier-config": "3.0.3",
     "c8": "7.14.0",
     "eslint": "8.41.0",
@@ -78,7 +78,7 @@
     "tsup": "6.7.0",
     "typescript": "5.0.4",
     "vite": "4.3.9",
-    "vitest": "0.31.2"
+    "vitest": "0.31.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
