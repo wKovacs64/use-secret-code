@@ -26,6 +26,6 @@
     "@vitejs/plugin-react": "^2.1.0"
   },
   "dependencies": {
-    "use-secret-code": "1.0.80"
+    "use-secret-code": "1.0.81"
   }
 }
