@@ -44,7 +44,8 @@
     "postinstall": "patch-package",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "typecheck": "tsc --noEmit"
   },
   "private": false,
   "publishConfig": {
