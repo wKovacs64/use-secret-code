@@ -6,8 +6,8 @@ import { useMachine } from '@xstate/react';
 import { isEqual, takeRight } from './utils';
 
 interface CheatCodeContext {
-  cheatCodeKeys?: Array<string>;
-  typedKeys: Array<string>;
+  cheatCodeKeys?: string[];
+  typedKeys: string[];
 }
 
 const initialContext: CheatCodeContext = {
@@ -130,7 +130,7 @@ const cheatCodeMachine = createMachine(
   },
 );
 
-export function useCheatCode(cheatCodeKeys: Array<string>): boolean {
+export function useCheatCode(cheatCodeKeys: string[]): boolean {
   const machineOpts = React.useMemo(
     () => ({
       context: { cheatCodeKeys },

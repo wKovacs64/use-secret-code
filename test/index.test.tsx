@@ -4,7 +4,7 @@ import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { useCheatCode } from '../src';
 
-function TestComponent({ cheatCodeKeys }: { cheatCodeKeys: Array<string> }) {
+function TestComponent({ cheatCodeKeys }: { cheatCodeKeys: string[] }) {
   const cheatCodeActivated = useCheatCode(cheatCodeKeys);
   return <div data-testid={cheatCodeActivated ? 'enabled' : 'disabled'} />;
 }

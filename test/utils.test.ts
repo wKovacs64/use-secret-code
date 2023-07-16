@@ -8,7 +8,7 @@ describe('utils', () => {
       const differentOrder = ['a', 'c', 'b'];
       const sameStartWithExtra = ['a', 'b', 'c', 'd'];
       const sameEndWithExtra = ['d', 'a', 'b', 'c'];
-      const empty: Array<string> = [];
+      const empty: string[] = [];
 
       expect(isEqual(array, sameContent)).toBe(true);
       expect(isEqual(array, differentOrder)).toBe(false);
