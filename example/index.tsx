@@ -25,6 +25,6 @@ function CheatCodeExample() {
   );
 }
 
-const root = createRoot(document.getElementById('root') as HTMLElement);
+const root = createRoot(document.getElementById('root')!);
 
 root.render(<CheatCodeExample />);
