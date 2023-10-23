@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@xstate/react": "3.2.2",
-    "xstate": "4.38.2"
+    "xstate": "4.38.3"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.4.8",
