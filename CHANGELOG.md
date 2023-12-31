@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.82
+
+### Patch Changes
+
+- [#167](https://github.com/wKovacs64/use-secret-code/pull/167) [`d908dfa`](https://github.com/wKovacs64/use-secret-code/commit/d908dfa3db5d104ed1b8d67aa57011f98ba0edac) Thanks [@renovate](https://github.com/apps/renovate)! - Update XState to v5, which should reduce the package size.
+
 ## 1.0.81
 
 ### Patch Changes
