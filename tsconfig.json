@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "module": "esnext",
     "lib": ["dom", "esnext"],
     "strict": true,
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "verbatimModuleSyntax": true,
     "jsx": "react",
     "esModuleInterop": true,
