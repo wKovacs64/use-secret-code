@@ -22,11 +22,12 @@
   "bugs": {
     "url": "https://github.com/wKovacs64/use-secret-code/issues"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
   },
   "files": [
     "dist"
@@ -39,6 +40,7 @@
     "example:install": "npm --workspace=example install",
     "example:build": "npm --workspace=example run build",
     "format": "prettier --cache --write .",
+    "format:check": "prettier --cache --check .",
     "lint": "eslint .",
     "prepare": "npm run --silent build",
     "test": "vitest run",
