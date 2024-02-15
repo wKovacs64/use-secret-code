@@ -69,7 +69,7 @@
     "@vitest/coverage-v8": "1.2.2",
     "@wkovacs64/prettier-config": "3.0.3",
     "eslint": "8.56.0",
-    "eslint-plugin-wkovacs64": "15.1.0",
+    "eslint-plugin-wkovacs64": "16.0.0",
     "happy-dom": "13.3.8",
     "npm-run-all2": "6.1.2",
     "prettier": "3.2.5",
