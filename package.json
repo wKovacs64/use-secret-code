@@ -68,7 +68,7 @@
     "@types/react-dom": "18.3.0",
     "@vitest/coverage-v8": "1.6.0",
     "@wkovacs64/prettier-config": "3.0.3",
-    "eslint": "8.57.0",
+    "eslint": "9.2.0",
     "eslint-plugin-wkovacs64": "16.2.0",
     "happy-dom": "14.10.1",
     "npm-run-all2": "6.1.2",
