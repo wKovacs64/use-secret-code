@@ -10,15 +10,13 @@ function CheatCodeExample() {
       <header style={{ marginBottom: '4rem' }}>
         <h1>use-secret-code playground</h1>
         <h2 style={{ fontWeight: 'lighter' }}>
-          Type &quot;<code style={{ letterSpacing: 2 }}>iddqd</code>&quot; to
-          toggle invulnerability!
+          Type &quot;<code style={{ letterSpacing: 2 }}>iddqd</code>&quot; to toggle
+          invulnerability!
         </h2>
       </header>
       <main>
         <p>
-          <span>
-            Invulnerability: {invulnerability ? 'enabled' : 'disabled'}
-          </span>
+          <span>Invulnerability: {invulnerability ? 'enabled' : 'disabled'}</span>
         </p>
       </main>
     </div>

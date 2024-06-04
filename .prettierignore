@@ -1,5 +1,6 @@
-.cache
-coverage
-dist
+# .gitignore and...
+
+.changeset
 package.json
+package-lock.json
 **/*.typegen.ts
