@@ -43,10 +43,7 @@ const cheatCodeMachine = setup({
     cheatCodeEntered: ({ context }) => {
       return (
         Array.isArray(context.cheatCodeKeys) &&
-        isEqual(
-          takeRight(context.typedKeys, context.cheatCodeKeys.length),
-          context.cheatCodeKeys,
-        )
+        isEqual(takeRight(context.typedKeys, context.cheatCodeKeys.length), context.cheatCodeKeys)
       );
     },
   },

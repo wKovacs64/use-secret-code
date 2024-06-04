@@ -1,9 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    { "repo": "wKovacs64/use-secret-code" }
-  ],
+  "changelog": ["@changesets/changelog-github", { "repo": "wKovacs64/use-secret-code" }],
   "commit": false,
   "fixed": [],
   "linked": [],
