@@ -1,5 +1,0 @@
-.cache
-node_modules
-coverage
-dist
-**/*.typegen.ts
