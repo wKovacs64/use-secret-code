@@ -70,7 +70,7 @@
     "@wkovacs64/eslint-config": "7.3.0",
     "@wkovacs64/prettier-config": "4.1.1",
     "eslint": "8.57.1",
-    "happy-dom": "15.10.1",
+    "happy-dom": "15.10.2",
     "prettier": "3.3.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
