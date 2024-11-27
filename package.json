@@ -71,7 +71,7 @@
     "@wkovacs64/prettier-config": "4.1.1",
     "eslint": "9.15.0",
     "happy-dom": "15.11.6",
-    "prettier": "3.3.3",
+    "prettier": "3.4.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tsup": "8.3.5",
