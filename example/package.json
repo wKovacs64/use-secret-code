@@ -23,7 +23,6 @@
     "@types/babel__core": "^7.1.19",
     "@types/picomatch": "^2.3.0",
     "@types/ws": "^8.5.3",
-    "@vitejs/plugin-legacy": "^5.2.0",
     "@vitejs/plugin-react": "^4.2.1"
   },
   "dependencies": {
