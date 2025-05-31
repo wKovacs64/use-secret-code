@@ -53,8 +53,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@xstate/react": "5.0.4",
-    "xstate": "5.19.3"
+    "@xstate/react": "5.0.5",
+    "xstate": "5.19.4"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",
