@@ -16,8 +16,7 @@
     "email": "justin.r.hall@gmail.com"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/wKovacs64/use-secret-code.git"
+    "url": "git+https://github.com/wKovacs64/use-secret-code.git"
   },
   "bugs": {
     "url": "https://github.com/wKovacs64/use-secret-code/issues"
@@ -63,7 +62,7 @@
     "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "16.3.0",
     "@testing-library/user-event": "14.6.1",
-    "@types/node": "22.18.8",
+    "@types/node": "24.6.2",
     "@types/react": "19.2.0",
     "@types/react-dom": "19.2.0",
     "@vitest/coverage-v8": "3.2.4",
