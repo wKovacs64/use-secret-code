@@ -133,7 +133,7 @@ const cheatCodeMachine = setup({
   },
 });
 
-export function useCheatCode(cheatCodeKeys: string[]): boolean {
+export function useCheatCode(cheatCodeKeys: string[], onCheatCodeEntered?: () => void): boolean {
   const machineOpts = React.useMemo<{ input: CheatCodeMachineInput }>(
     () => ({ input: { cheatCodeKeys } }),
     [cheatCodeKeys],
@@ -142,6 +142,10 @@ export function useCheatCode(cheatCodeKeys: string[]): boolean {
   const [state, send] = useMachine(cheatCodeMachine, machineOpts);
 
   React.useEffect(() => {
+    if (state.matches('enabled') && onCheatCodeEntered) {
+      onCheatCodeEntered(); // Trigger the custom callback when cheat code is entered
+    }
+
     const handleKeydownEvent = (event: KeyboardEvent) => {
       send(event as KeydownEvent);
     };
