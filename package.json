@@ -68,7 +68,7 @@
     "@vitest/coverage-v8": "4.0.6",
     "@wkovacs64/eslint-config": "7.11.1",
     "@wkovacs64/prettier-config": "4.2.2",
-    "eslint": "9.38.0",
+    "eslint": "9.39.1",
     "happy-dom": "20.0.10",
     "prettier": "3.6.2",
     "react": "19.2.0",
