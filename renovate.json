@@ -22,5 +22,6 @@
       "matchUpdateTypes": ["minor"],
       "automerge": false
     }
-  ]
+  ],
+  "ignorePaths": ["example"]
 }
