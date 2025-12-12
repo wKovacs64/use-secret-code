@@ -34,14 +34,14 @@
   "scripts": {
     "build": "tsup ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
     "changeset": "changeset",
-    "changeset:version": "changeset version && npm install --package-lock-only",
+    "changeset:version": "changeset version && pnpm install",
     "changeset:publish": "changeset publish",
-    "example:install": "npm --workspace=example install",
-    "example:build": "npm --workspace=example run build",
+    "example:install": "pnpm --filter=example install",
+    "example:build": "pnpm --filter=example run build",
     "format": "prettier --cache --write .",
     "format:check": "prettier --cache --check .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "prepare": "npm run --silent build",
+    "prepare": "pnpm run --silent build",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch",
@@ -51,6 +51,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "packageManager": "pnpm@10.25.0",
   "dependencies": {
     "@xstate/react": "6.0.0",
     "xstate": "5.24.0"
@@ -80,9 +81,5 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
-  },
-  "workspaces": [
-    ".",
-    "example"
-  ]
+  }
 }
