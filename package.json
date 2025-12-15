@@ -76,7 +76,7 @@
     "react-dom": "19.2.1",
     "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vite": "7.2.6",
+    "vite": "7.2.7",
     "vitest": "4.0.15"
   },
   "peerDependencies": {
