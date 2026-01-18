@@ -16,6 +16,7 @@
     "email": "justin.r.hall@gmail.com"
   },
   "repository": {
+    "type": "git",
     "url": "git+https://github.com/wKovacs64/use-secret-code.git"
   },
   "bugs": {
