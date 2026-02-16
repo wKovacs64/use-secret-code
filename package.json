@@ -52,7 +52,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@10.29.1",
+  "packageManager": "pnpm@10.29.2",
   "dependencies": {
     "@xstate/react": "6.0.0",
     "xstate": "5.26.0"
