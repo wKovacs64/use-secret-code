@@ -44,10 +44,10 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitest/coverage-v8':
         specifier: 4.0.18
-        version: 4.0.18(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2))
+        version: 4.0.18(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3))
       '@wkovacs64/eslint-config':
         specifier: 7.12.0
-        version: 7.12.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2))
+        version: 7.12.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3))
       '@wkovacs64/prettier-config':
         specifier: 4.2.4
         version: 4.2.4(prettier@3.8.1)
@@ -55,8 +55,8 @@ importers:
         specifier: 9.39.2
         version: 9.39.2
       happy-dom:
-        specifier: 20.6.2
-        version: 20.6.2
+        specifier: 20.6.3
+        version: 20.6.3
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -77,7 +77,7 @@ importers:
         version: 7.3.1(@types/node@24.10.13)
       vitest:
         specifier: 4.0.18
-        version: 4.0.18(@types/node@24.10.13)(happy-dom@20.6.2)
+        version: 4.0.18(@types/node@24.10.13)(happy-dom@20.6.3)
 
   example:
     dependencies:
@@ -1632,8 +1632,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  happy-dom@20.6.2:
-    resolution: {integrity: sha512-Xk/Y0cuq9ngN/my8uvK4gKoyDl6sBKkIl8A/hJ0IabZVH7E5SJLHNE7uKRPVmSrQbhJaLIHTEcvTct4GgNtsRA==}
+  happy-dom@20.6.3:
+    resolution: {integrity: sha512-QAMY7d228dHs8gb9NG4SJ3OxQo4r+NGN8pOXGZ3SGfQf/XYuuYubrtZ25QVY2WoUQdskhRXSXb4R4mcRk+hV1w==}
     engines: {node: '>=20.0.0'}
 
   has-bigints@1.1.0:
@@ -3619,7 +3619,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2))':
+  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3))':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/utils': 4.0.18
@@ -3631,16 +3631,16 @@ snapshots:
       obug: 2.1.1
       std-env: 3.10.0
       tinyrainbow: 3.0.3
-      vitest: 4.0.18(@types/node@24.10.13)(happy-dom@20.6.2)
+      vitest: 4.0.18(@types/node@24.10.13)(happy-dom@20.6.3)
 
-  '@vitest/eslint-plugin@1.6.6(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2))':
+  '@vitest/eslint-plugin@1.6.6(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.53.0
       '@typescript-eslint/utils': 8.53.0(eslint@9.39.2)(typescript@5.9.3)
       eslint: 9.39.2
     optionalDependencies:
       typescript: 5.9.3
-      vitest: 4.0.18(@types/node@24.10.13)(happy-dom@20.6.2)
+      vitest: 4.0.18(@types/node@24.10.13)(happy-dom@20.6.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -3683,10 +3683,10 @@ snapshots:
       '@vitest/pretty-format': 4.0.18
       tinyrainbow: 3.0.3
 
-  '@wkovacs64/eslint-config@7.12.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2))':
+  '@wkovacs64/eslint-config@7.12.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3))':
     dependencies:
       '@eslint/js': 9.39.2
-      '@vitest/eslint-plugin': 1.6.6(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2))
+      '@vitest/eslint-plugin': 1.6.6(eslint@9.39.2)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3))
       eslint-plugin-astro: 1.5.0(eslint@9.39.2)
       eslint-plugin-import-x: 4.16.1(@typescript-eslint/utils@8.53.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)
       eslint-plugin-jest-dom: 5.5.0(@testing-library/dom@10.4.1)(eslint@9.39.2)
@@ -4543,7 +4543,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  happy-dom@20.6.2:
+  happy-dom@20.6.3:
     dependencies:
       '@types/node': 24.10.13
       '@types/whatwg-mimetype': 3.0.2
@@ -5558,7 +5558,7 @@ snapshots:
       '@types/node': 24.10.13
       fsevents: 2.3.3
 
-  vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.2):
+  vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.3):
     dependencies:
       '@vitest/expect': 4.0.18
       '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@24.10.13))
@@ -5582,7 +5582,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.10.13
-      happy-dom: 20.6.2
+      happy-dom: 20.6.3
     transitivePeerDependencies:
       - jiti
       - less
