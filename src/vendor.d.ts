@@ -1,1 +1,1 @@
-declare module '@sheerun/mutationobserver-shim';
+declare module "@sheerun/mutationobserver-shim";

@@ -31,11 +31,11 @@ thing, but I will personally be importing `useCheatCode` in my own projects.
 
 ```js
 // import { useSecretCode } from 'use-secret-code'; // alternate
-import { useCheatCode } from 'use-secret-code';
+import { useCheatCode } from "use-secret-code";
 
 function CheatCodeExample() {
-  const invulnerability = useCheatCode(['i', 'd', 'd', 'q', 'd']);
-  return <span>Invulnerability: {invulnerability ? 'enabled' : 'disabled'}</span>;
+  const invulnerability = useCheatCode(["i", "d", "d", "q", "d"]);
+  return <span>Invulnerability: {invulnerability ? "enabled" : "disabled"}</span>;
 }
 ```
 
@@ -50,11 +50,9 @@ This module is distributed under the [MIT License][license].
 
 [npm-image]: https://img.shields.io/npm/v/use-secret-code.svg?style=for-the-badge
 [npm-url]: https://www.npmjs.com/package/use-secret-code
-[ci-image]:
-  https://img.shields.io/github/actions/workflow/status/wKovacs64/use-secret-code/ci.yml?logo=github&style=for-the-badge
+[ci-image]: https://img.shields.io/github/actions/workflow/status/wKovacs64/use-secret-code/ci.yml?logo=github&style=for-the-badge
 [ci-url]: https://github.com/wKovacs64/use-secret-code/actions?query=workflow%3Aci
-[coverage-image]:
-  https://img.shields.io/codecov/c/github/wKovacs64/use-secret-code/main.svg?style=for-the-badge
+[coverage-image]: https://img.shields.io/codecov/c/github/wKovacs64/use-secret-code/main.svg?style=for-the-badge
 [coverage-url]: https://codecov.io/gh/wKovacs64/use-secret-code/branch/main
 [license]: https://github.com/wKovacs64/use-secret-code/tree/main/LICENSE
 [react]: https://reactjs.org/

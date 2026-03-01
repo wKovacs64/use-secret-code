@@ -2,13 +2,21 @@
   "name": "example",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
     "serve": "vite preview"
+  },
+  "dependencies": {
+    "use-secret-code": "1.0.82"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^4.6.0"
   },
   "alias": {
     "@types/react": "../node_modules/@types/react",
@@ -18,13 +26,5 @@
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling",
     "typescript": "../node_modules/typescript",
     "vite": "../node_modules/vite"
-  },
-  "devDependencies": {
-    "@types/babel__core": "^7.20.5",
-    "@types/ws": "^8.18.1",
-    "@vitejs/plugin-react": "^4.6.0"
-  },
-  "dependencies": {
-    "use-secret-code": "1.0.82"
   }
 }

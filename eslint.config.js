@@ -1,1 +1,1 @@
-export { default } from '@wkovacs64/eslint-config';
+export { default } from "@wkovacs64/eslint-config";
