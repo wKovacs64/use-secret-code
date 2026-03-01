@@ -1,15 +1,19 @@
 {
   "name": "use-secret-code",
   "version": "1.0.82",
+  "private": false,
   "description": "Custom hook for adding cheat codes to your React app",
   "keywords": [
-    "react",
+    "cheat",
+    "code",
     "hook",
     "hooks",
-    "secret",
-    "cheat",
-    "code"
+    "react",
+    "secret"
   ],
+  "bugs": {
+    "url": "https://github.com/wKovacs64/use-secret-code/issues"
+  },
   "license": "MIT",
   "author": {
     "name": "Justin Hall",
@@ -19,9 +23,9 @@
     "type": "git",
     "url": "git+https://github.com/wKovacs64/use-secret-code.git"
   },
-  "bugs": {
-    "url": "https://github.com/wKovacs64/use-secret-code/issues"
-  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -29,9 +33,9 @@
     "require": "./dist/index.cjs",
     "import": "./dist/index.js"
   },
-  "files": [
-    "dist"
-  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
     "changeset": "changeset",
@@ -39,8 +43,8 @@
     "changeset:publish": "changeset publish",
     "example:install": "pnpm --filter=example install",
     "example:build": "pnpm --filter=example run build",
-    "format": "prettier --cache --write .",
-    "format:check": "prettier --cache --check .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "prepare": "pnpm run --silent build",
     "test": "vitest run",
@@ -48,11 +52,6 @@
     "test:watch": "vitest watch",
     "typecheck": "tsc --noEmit"
   },
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "packageManager": "pnpm@10.30.1",
   "dependencies": {
     "@xstate/react": "6.0.0",
     "xstate": "5.28.0"
@@ -69,10 +68,9 @@
     "@types/react-dom": "19.2.3",
     "@vitest/coverage-v8": "4.0.18",
     "@wkovacs64/eslint-config": "7.13.0",
-    "@wkovacs64/prettier-config": "4.2.4",
     "eslint": "9.39.3",
     "happy-dom": "20.7.0",
-    "prettier": "3.8.1",
+    "oxfmt": "0.35.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "tsup": "8.5.1",
@@ -82,5 +80,6 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
-  }
+  },
+  "packageManager": "pnpm@10.30.1"
 }
