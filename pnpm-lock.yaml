@@ -44,16 +44,16 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitest/coverage-v8':
         specifier: 4.0.18
-        version: 4.0.18(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0))
+        version: 4.0.18(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3))
       '@wkovacs64/eslint-config':
         specifier: 7.14.0
-        version: 7.14.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.56.1(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0))
+        version: 7.14.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.56.1(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3))
       eslint:
         specifier: 9.39.3
         version: 9.39.3
       happy-dom:
-        specifier: 20.7.0
-        version: 20.7.0
+        specifier: 20.8.3
+        version: 20.8.3
       oxfmt:
         specifier: 0.36.0
         version: 0.36.0
@@ -74,7 +74,7 @@ importers:
         version: 7.3.1(@types/node@24.11.0)
       vitest:
         specifier: 4.0.18
-        version: 4.0.18(@types/node@24.11.0)(happy-dom@20.7.0)
+        version: 4.0.18(@types/node@24.11.0)(happy-dom@20.8.3)
 
   example:
     dependencies:
@@ -1730,8 +1730,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  happy-dom@20.7.0:
-    resolution: {integrity: sha512-hR/uLYQdngTyEfxnOoa+e6KTcfBFyc1hgFj/Cc144A5JJUuHFYqIEBDcD4FeGqUeKLRZqJ9eN9u7/GDjYEgS1g==}
+  happy-dom@20.8.3:
+    resolution: {integrity: sha512-lMHQRRwIPyJ70HV0kkFT7jH/gXzSI7yDkQFe07E2flwmNDFoWUTRMKpW2sglsnpeA7b6S2TJPp98EbQxai8eaQ==}
     engines: {node: '>=20.0.0'}
 
   has-bigints@1.1.0:
@@ -3683,7 +3683,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0))':
+  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3))':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/utils': 4.0.18
@@ -3695,16 +3695,16 @@ snapshots:
       obug: 2.1.1
       std-env: 3.10.0
       tinyrainbow: 3.0.3
-      vitest: 4.0.18(@types/node@24.11.0)(happy-dom@20.7.0)
+      vitest: 4.0.18(@types/node@24.11.0)(happy-dom@20.8.3)
 
-  '@vitest/eslint-plugin@1.6.9(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0))':
+  '@vitest/eslint-plugin@1.6.9(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.56.1
       '@typescript-eslint/utils': 8.56.1(eslint@9.39.3)(typescript@5.9.3)
       eslint: 9.39.3
     optionalDependencies:
       typescript: 5.9.3
-      vitest: 4.0.18(@types/node@24.11.0)(happy-dom@20.7.0)
+      vitest: 4.0.18(@types/node@24.11.0)(happy-dom@20.8.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -3747,10 +3747,10 @@ snapshots:
       '@vitest/pretty-format': 4.0.18
       tinyrainbow: 3.0.3
 
-  '@wkovacs64/eslint-config@7.14.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.56.1(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0))':
+  '@wkovacs64/eslint-config@7.14.0(@testing-library/dom@10.4.1)(@typescript-eslint/utils@8.56.1(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3))':
     dependencies:
       '@eslint/js': 9.39.3
-      '@vitest/eslint-plugin': 1.6.9(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0))
+      '@vitest/eslint-plugin': 1.6.9(eslint@9.39.3)(typescript@5.9.3)(vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3))
       eslint-plugin-astro: 1.6.0(eslint@9.39.3)
       eslint-plugin-import-x: 4.16.1(@typescript-eslint/utils@8.56.1(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)
       eslint-plugin-jest-dom: 5.5.0(@testing-library/dom@10.4.1)(eslint@9.39.3)
@@ -4589,7 +4589,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  happy-dom@20.7.0:
+  happy-dom@20.8.3:
     dependencies:
       '@types/node': 24.11.0
       '@types/whatwg-mimetype': 3.0.2
@@ -5602,7 +5602,7 @@ snapshots:
       '@types/node': 24.11.0
       fsevents: 2.3.3
 
-  vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.7.0):
+  vitest@4.0.18(@types/node@24.11.0)(happy-dom@20.8.3):
     dependencies:
       '@vitest/expect': 4.0.18
       '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@24.11.0))
@@ -5626,7 +5626,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.11.0
-      happy-dom: 20.7.0
+      happy-dom: 20.8.3
     transitivePeerDependencies:
       - jiti
       - less
