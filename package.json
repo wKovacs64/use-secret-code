@@ -66,7 +66,7 @@
     "@types/node": "24.12.2",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitest/coverage-v8": "4.1.2",
+    "@vitest/coverage-v8": "4.1.4",
     "@wkovacs64/eslint-config": "7.14.0",
     "eslint": "9.39.4",
     "happy-dom": "20.8.9",
@@ -76,7 +76,7 @@
     "tsup": "8.5.1",
     "typescript": "5.9.3",
     "vite": "7.3.2",
-    "vitest": "4.1.2"
+    "vitest": "4.1.4"
   },
   "peerDependencies": {
     "react": ">=16.8.0"
