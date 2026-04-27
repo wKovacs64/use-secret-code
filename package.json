@@ -70,7 +70,7 @@
     "@wkovacs64/eslint-config": "7.14.0",
     "eslint": "9.39.4",
     "happy-dom": "20.9.0",
-    "oxfmt": "0.45.0",
+    "oxfmt": "0.46.0",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "tsup": "8.5.1",
