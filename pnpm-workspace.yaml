@@ -1,3 +1,6 @@
 packages:
   - .
   - example
+allowBuilds:
+  esbuild: false
+  unrs-resolver: false
