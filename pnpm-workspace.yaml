@@ -1,7 +1,8 @@
-minimumReleaseAge: 4320
 packages:
   - .
   - example
 allowBuilds:
   esbuild: false
   unrs-resolver: false
+
+minimumReleaseAge: 4320
