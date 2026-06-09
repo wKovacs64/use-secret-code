@@ -52,8 +52,8 @@ importers:
         specifier: 9.39.4
         version: 9.39.4
       happy-dom:
-        specifier: 20.10.1
-        version: 20.10.1
+        specifier: 20.10.2
+        version: 20.10.2
       oxfmt:
         specifier: 0.53.0
         version: 0.53.0
@@ -74,7 +74,7 @@ importers:
         version: 8.0.16(@types/node@24.13.1)
       vitest:
         specifier: 4.1.8
-        version: 4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.1)(vite@8.0.16(@types/node@24.13.1))
+        version: 4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.2)(vite@8.0.16(@types/node@24.13.1))
 
   example:
     dependencies:
@@ -1747,8 +1747,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  happy-dom@20.10.1:
-    resolution: {integrity: sha512-awPoqPjx8CgjapJllyDlgzgVHjBExcitKK5ZJkxwhQJyQpHFkyS2bEcqCm7IeW20cQvuCI0cz2Ifq79CJKqtiw==}
+  happy-dom@20.10.2:
+    resolution: {integrity: sha512-5p9Sxis3eowDJKqx90QCsgbNA02XXqJ59NOHvD4V6cxp+rP4d/xOyVx7uY3hS8hiUbY1VeiFH8lbJ81AyuDVLQ==}
     engines: {node: '>=20.0.0'}
 
   has-bigints@1.1.0:
@@ -2873,8 +2873,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  ws@8.20.0:
-    resolution: {integrity: sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA==}
+  ws@8.21.0:
+    resolution: {integrity: sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -3856,7 +3856,7 @@ snapshots:
       obug: 2.1.1
       std-env: 4.0.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.1)(vite@8.0.16(@types/node@24.13.1))
+      vitest: 4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.2)(vite@8.0.16(@types/node@24.13.1))
 
   '@vitest/eslint-plugin@1.6.17(@typescript-eslint/eslint-plugin@8.59.3(@typescript-eslint/parser@8.59.3(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)(vitest@4.1.8)':
     dependencies:
@@ -3866,7 +3866,7 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.59.3(@typescript-eslint/parser@8.59.3(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)
       typescript: 6.0.3
-      vitest: 4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.1)(vite@8.0.16(@types/node@24.13.1))
+      vitest: 4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.2)(vite@8.0.16(@types/node@24.13.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -4134,7 +4134,7 @@ snapshots:
 
   buffer-image-size@0.6.4:
     dependencies:
-      '@types/node': 24.13.0
+      '@types/node': 24.13.1
 
   cac@7.0.0: {}
 
@@ -4729,15 +4729,15 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  happy-dom@20.10.1:
+  happy-dom@20.10.2:
     dependencies:
-      '@types/node': 24.13.0
+      '@types/node': 24.13.1
       '@types/whatwg-mimetype': 3.0.2
       '@types/ws': 8.18.1
       buffer-image-size: 0.6.4
       entities: 7.0.1
       whatwg-mimetype: 3.0.0
-      ws: 8.20.0
+      ws: 8.21.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -5774,7 +5774,7 @@ snapshots:
       '@types/node': 24.13.1
       fsevents: 2.3.3
 
-  vitest@4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.1)(vite@8.0.16(@types/node@24.13.1)):
+  vitest@4.1.8(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(happy-dom@20.10.2)(vite@8.0.16(@types/node@24.13.1)):
     dependencies:
       '@vitest/expect': 4.1.8
       '@vitest/mocker': 4.1.8(vite@8.0.16(@types/node@24.13.1))
@@ -5799,7 +5799,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.13.1
       '@vitest/coverage-v8': 4.1.8(vitest@4.1.8)
-      happy-dom: 20.10.1
+      happy-dom: 20.10.2
     transitivePeerDependencies:
       - msw
 
@@ -5864,7 +5864,7 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  ws@8.20.0: {}
+  ws@8.21.0: {}
 
   xstate@5.32.0: {}
 
