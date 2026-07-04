@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@xstate/react':
         specifier: 6.1.0
-        version: 6.1.0(@types/react@19.2.17)(react@19.2.7)(xstate@5.32.2)
+        version: 6.1.0(@types/react@19.2.17)(react@19.2.7)(xstate@5.32.3)
       xstate:
-        specifier: 5.32.2
-        version: 5.32.2
+        specifier: 5.32.3
+        version: 5.32.3
     devDependencies:
       '@changesets/changelog-github':
         specifier: 0.7.0
@@ -2908,8 +2908,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xstate@5.32.2:
-    resolution: {integrity: sha512-uDrojEQYYb4cEeB/SpKDBQlnL2969N5ltmVak4jUMUC6VVRuhi7PCnTBxe4YlQ8YLzdaOEOuVR48CRQPE2o0Uw==}
+  xstate@5.32.3:
+    resolution: {integrity: sha512-I8PDV+D9f5iuAGR/CjiQwf/7A+iiSWHsd16jWe/2Z1GQh4T4JQBYvpauqBK+SAU3TegOBtTvxcqAjhJnqeT0sg==}
 
   xstate@5.4.1:
     resolution: {integrity: sha512-1DDT047hsTCSgm3BwLyb4sXQDmTdbLutc4ni0MLACgd2yX6vij35pnNNf1F4U6kQ8njx6NxQ6wpLjlh1lqs0NQ==}
@@ -3996,13 +3996,13 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@xstate/react@6.1.0(@types/react@19.2.17)(react@19.2.7)(xstate@5.32.2)':
+  '@xstate/react@6.1.0(@types/react@19.2.17)(react@19.2.7)(xstate@5.32.3)':
     dependencies:
       react: 19.2.7
       use-isomorphic-layout-effect: 1.2.1(@types/react@19.2.17)(react@19.2.7)
       use-sync-external-store: 1.6.0(react@19.2.7)
     optionalDependencies:
-      xstate: 5.32.2
+      xstate: 5.32.3
     transitivePeerDependencies:
       - '@types/react'
 
@@ -5919,7 +5919,7 @@ snapshots:
 
   ws@8.21.0: {}
 
-  xstate@5.32.2: {}
+  xstate@5.32.3: {}
 
   xstate@5.4.1: {}
 
