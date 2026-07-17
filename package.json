@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@xstate/react": "6.1.0",
-    "xstate": "5.32.4"
+    "xstate": "5.32.5"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.7.0",
