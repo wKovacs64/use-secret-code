@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/consistent-type-assertions */
+/* oxlint-disable typescript/consistent-type-assertions -- XState setup requires asserted type placeholders. */
 import * as React from "react";
 import { assign, setup } from "xstate";
 import { useMachine } from "@xstate/react";
