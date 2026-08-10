@@ -69,7 +69,7 @@
     "@vitest/coverage-v8": "4.1.10",
     "@wkovacs64/eslint-config": "8.0.2",
     "eslint": "9.39.5",
-    "happy-dom": "20.11.1",
+    "happy-dom": "20.11.2",
     "oxfmt": "0.62.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
