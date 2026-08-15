@@ -70,7 +70,7 @@
     "@wkovacs64/oxlint-config": "0.1.0",
     "happy-dom": "20.11.2",
     "oxfmt": "0.63.0",
-    "oxlint": "1.77.0",
+    "oxlint": "1.78.0",
     "oxlint-tsgolint": "7.0.2001",
     "react": "19.2.8",
     "react-dom": "19.2.8",
