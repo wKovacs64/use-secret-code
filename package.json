@@ -69,7 +69,7 @@
     "@vitest/coverage-v8": "4.1.11",
     "@wkovacs64/oxlint-config": "0.1.0",
     "happy-dom": "20.11.6",
-    "oxfmt": "0.64.0",
+    "oxfmt": "0.65.0",
     "oxlint": "1.78.0",
     "oxlint-tsgolint": "7.0.2001",
     "react": "19.2.8",
