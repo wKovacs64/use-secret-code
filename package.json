@@ -37,7 +37,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsdown ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
+    "build": "tsdown ./src/index.ts --format cjs,esm --dts --sourcemap --clean --tsconfig tsconfig.build.json",
     "changeset": "changeset",
     "changeset:version": "changeset version && pnpm install",
     "changeset:publish": "changeset publish",
