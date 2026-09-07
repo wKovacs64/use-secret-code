@@ -37,7 +37,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsdown ./src/index.ts --format cjs,esm --dts --sourcemap --clean",
+    "build": "tsdown ./src/index.ts --format cjs,esm --dts --sourcemap --clean --tsconfig tsconfig.build.json",
     "changeset": "changeset",
     "changeset:version": "changeset version && pnpm install",
     "changeset:publish": "changeset publish",
@@ -74,7 +74,7 @@
     "oxlint-tsgolint": "7.0.2001",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "tsdown": "0.22.14",
+    "tsdown": "0.23.0",
     "typescript": "7.0.2",
     "vite": "8.2.2",
     "vitest": "4.1.11"
