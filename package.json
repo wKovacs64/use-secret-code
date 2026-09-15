@@ -68,7 +68,7 @@
     "@types/react-dom": "19.3.0",
     "@vitest/coverage-v8": "5.0.0",
     "@wkovacs64/oxlint-config": "0.2.2",
-    "happy-dom": "20.14.3",
+    "happy-dom": "20.14.5",
     "oxfmt": "0.67.0",
     "oxlint": "1.82.0",
     "oxlint-tsgolint": "7.0.2001",
