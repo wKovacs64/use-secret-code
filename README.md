@@ -4,6 +4,10 @@ _Custom hook for adding cheat codes to your React app._
 
 [![npm Version][npm-image]][npm-url] [![Build Status][ci-image]][ci-url]
 
+<!-- prettier-ignore -->
+> [!IMPORTANT]
+> This project is no longer maintained.
+
 ## Installation
 
 ```
