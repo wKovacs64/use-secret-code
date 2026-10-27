@@ -156,4 +156,4 @@ export function useCheatCode(cheatCodeKeys: string[]): boolean {
   return state.matches("enabled");
 }
 
-export const useSecretCode = /* c8 ignore next */ useCheatCode;
+export const useSecretCode: typeof useCheatCode = /* c8 ignore next */ useCheatCode;
